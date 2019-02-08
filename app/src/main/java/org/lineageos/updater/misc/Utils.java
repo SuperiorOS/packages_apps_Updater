@@ -122,11 +122,7 @@ public class Utils {
                 Constants.PROP_ALLOW_MAJOR_UPGRADES, false);
 
         return (SystemProperties.getBoolean(Constants.PROP_UPDATER_ALLOW_DOWNGRADING, false) ||
-                update.getTimestamp() > SystemProperties.getLong(Constants.PROP_BUILD_DATE, 0)) &&
-                compareVersions(
-                        update.getVersion(),
-                        SystemProperties.get(Constants.PROP_BUILD_VERSION),
-                        allowMajorUpgrades);
+                update.getTimestamp() > SystemProperties.getLong(Constants.PROP_BUILD_DATE, 0));
     }
 
     public static List<UpdateInfo> parseJson(File file, boolean compatibleOnly)
