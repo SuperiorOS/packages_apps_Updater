@@ -176,4 +176,7 @@
 
     <string name="welcome_title">Welcome</string>
     <string name="welcome_message">Please note that when multiple updates are available, there is no need to go update-by-update, you can always install the latest one directly, and then safely delete old updates to free up storage space.</string>
+
+    <!-- Blocked dialog -->
+    <string name="blocked_update_dialog_message_custom">This update cannot be installed using the updater app. Try installing update via recovery.</string>
 </resources>
